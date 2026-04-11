@@ -253,6 +253,30 @@
   font-size: 1.2rem;
 }
 
+.post-comments-fallback {
+  margin-top: 0.9rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #f2d4a7;
+  background: #fff8ea;
+  border-radius: 10px;
+  color: #6f4f1b;
+  font-size: 0.9rem;
+}
+
+.post-comments-fallback p {
+  margin: 0 0 0.45rem;
+}
+
+.post-comments-fallback a {
+  color: #0b6cc2;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-comments-fallback a:hover {
+  text-decoration: underline;
+}
+
 .post-toc {
   grid-area: toc;
   position: sticky;

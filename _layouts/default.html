@@ -52,6 +52,10 @@
                 crossorigin="anonymous"
                 async>
               </script>
+              <div class="post-comments-fallback" id="post-comments-fallback" hidden>
+                <p>评论组件未成功加载。请先为仓库安装 Utterances App，或直接在 GitHub Issue 留言。</p>
+                <a href="https://github.com/Limaomao821/limaomao821.github.io/issues/new?title=Comment%20on%20{{ page.title | uri_escape }}&body=From%20{{ page.url | absolute_url | uri_escape }}" target="_blank" rel="noopener noreferrer">去 GitHub 留言</a>
+              </div>
             </section>
           </article>
         </section>
@@ -113,6 +117,14 @@
         tocFab.addEventListener("click", function () {
           setCollapsed(!toc.classList.contains("is-collapsed"));
         });
+
+        var commentsFallback = document.getElementById("post-comments-fallback");
+        if (commentsFallback) {
+          setTimeout(function () {
+            var loaded = !!document.querySelector(".utterances-frame");
+            commentsFallback.hidden = loaded;
+          }, 4200);
+        }
       })();
     </script>
     <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
