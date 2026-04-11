@@ -265,6 +265,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
+    webrick (1.9.2)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -273,10 +274,11 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 219)
   jekyll-feed (~> 0.12)
-  minima (~> 2.5)
+  jekyll-remote-theme
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.2.27

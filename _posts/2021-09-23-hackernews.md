@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "2021-09-23 hacker news"
 categories: daily_hackernews
 ---
