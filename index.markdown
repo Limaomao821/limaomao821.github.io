@@ -6,6 +6,11 @@ title: Blog
 <section class="showcase-hero">
   <h1>Welcome To Limaomao Blog</h1>
   <p>记录代码、学习和有趣发现</p>
+  <p class="site-contact">联系方式：<a href="mailto:cun.jia.li@gmail.com">cun.jia.li@gmail.com</a></p>
+  <div class="site-view-stats">
+    <span id="busuanzi_container_site_pv">总访问 <strong id="busuanzi_value_site_pv">0</strong></span>
+    <span id="busuanzi_container_site_uv">访客 <strong id="busuanzi_value_site_uv">0</strong></span>
+  </div>
 </section>
 
 <section class="showcase-controls">
