@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="n" name="T4 Nested">
+    <mxGraphModel dx="1600" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1800" pageHeight="2400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0a1929;strokeColor=#00e5ff;strokeWidth=3;arcSize=5;">
+          <mxGeometry x="180" y="30" width="1500" height="1119" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#37474f;strokeColor=#546e7a;strokeWidth=2;">
+          <mxGeometry x="158" y="70" width="22" height="1039" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" vertex="1" value="&lt;font color=&quot;#00e5ff&quot; style=&quot;font-size:24px;&quot;&gt;&lt;b&gt;NVIDIA TESLA T4&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:18px;&quot;&gt;|&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#90a4ae&quot; style=&quot;font-size:13px;&quot;&gt;Turing · 12nm FFN · 70W · PCIe Gen3 · 2018&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="200" y="40" width="1460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" vertex="1" value="&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Compute Capability:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;7.5&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;FP32:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;8.1 TFLOPS&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Tensor FP16:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;65 TFLOPS&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Clock:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;585/1590 MHz&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0d2137;strokeColor=#00e5ff;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="200" y="70" width="1460" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#110a00;strokeColor=#ff9800;strokeWidth=2;arcSize=8;">
+          <mxGeometry x="204" y="100" width="1452" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" vertex="1" value="&lt;font color=&quot;#ff9800&quot; style=&quot;font-size:15px;&quot;&gt;&lt;b&gt;Global Memory (GDDR6)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:13px;&quot;&gt;容量:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;16 GB&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:13px;&quot;&gt;总线宽度:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;256-bit&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:13px;&quot;&gt;最大时钟:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;5,001 MHz&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:13px;&quot;&gt;峰值带宽:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;320 GB/s&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0e00;strokeColor=#ff9800;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="216" y="108" width="716" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" vertex="1" value="&lt;font color=&quot;#ffb74d&quot; style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;L2 Cache&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;4 MB&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#888888&quot; style=&quot;font-size:12px;&quot;&gt;(所有 SM 共享)&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#888888&quot; style=&quot;font-size:11px;&quot;&gt;存储层级:&lt;/font&gt; &lt;font color=&quot;#ffeb3b&quot; style=&quot;font-size:11px;&quot;&gt;Registers&lt;/font&gt; → &lt;font color=&quot;#ff5722&quot; style=&quot;font-size:11px;&quot;&gt;Shared/L1&lt;/font&gt; → &lt;font color=&quot;#ffb74d&quot; style=&quot;font-size:11px;&quot;&gt;L2&lt;/font&gt; → &lt;font color=&quot;#ff9800&quot; style=&quot;font-size:11px;&quot;&gt;Global&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1200;strokeColor=#ffb74d;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="940" y="108" width="704" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#060e06;strokeColor=#76ff03;strokeWidth=2;arcSize=8;">
+          <mxGeometry x="204" y="242" width="1452" height="635" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;SM 阵列 — 40 个 Streaming Multiprocessors&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;(Max 1,024 Threads/SM · Max 32 Blocks/SM)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="219" y="250" width="1422" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0a1e0a;strokeColor=#76ff03;strokeWidth=2;arcSize=8;dashed=1;">
+          <mxGeometry x="218" y="282" width="1424" height="514" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;SM #0 (详细展开)&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#888888&quot; style=&quot;font-size:12px;&quot;&gt;— 其余 39 个 SM 结构相同&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="230" y="288" width="1400" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;SM 级资源&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;CUDA Cores:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;64&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Tensor Cores:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;8&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Shared Mem:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;64 KB&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Registers:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;65,536&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Max Threads/SM:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;1,024&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Max Blocks/SM:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;32&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Warp Size:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;32&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Max Regs/Thread:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;255&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0d260d;strokeColor=#76ff03;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="232" y="314" width="1396" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#120820;strokeColor=#ce93d8;strokeWidth=2;arcSize=8;">
+          <mxGeometry x="232" y="386" width="1396" height="388" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" vertex="1" value="&lt;font color=&quot;#ce93d8&quot; style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;Thread Block (CTA)&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#888888&quot; style=&quot;font-size:12px;&quot;&gt;— 每 SM 可同时驻留 ≤32 个 Block&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="244" y="392" width="1372" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" vertex="1" value="&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Max Threads/Block:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;1,024&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Max Shared Mem/Block:&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;48 KB&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#888888&quot; style=&quot;font-size:11px;&quot;&gt;(从 SM 的 64KB 中分配)&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:12px;&quot;&gt;Block 内线程共享 Shared Memory，可通过 __syncthreads() 同步&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0a2e;strokeColor=#ce93d8;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="246" y="418" width="1368" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#001a20;strokeColor=#26c6da;strokeWidth=2;arcSize=8;">
+          <mxGeometry x="262" y="480" width="414" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" vertex="1" value="&lt;font color=&quot;#26c6da&quot; style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;Warp #0&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:11px;&quot;&gt;32 线程 · SIMT&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="272" y="486" width="394" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T0&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="272" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T1&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="371" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T2&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="470" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T3&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="569" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T4&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="272" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T5&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="371" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T6&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="470" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T7&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="569" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T8&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="272" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T9&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="371" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T10&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="470" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T11&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="569" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T12&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="272" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T13&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="371" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T14&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="470" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T15&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="569" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;··· T31&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#888888&quot; style=&quot;font-size:11px;&quot;&gt;每线程 ≤ 255 Regs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="272" y="688" width="394" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#001a20;strokeColor=#26c6da;strokeWidth=2;arcSize=8;">
+          <mxGeometry x="692" y="480" width="414" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" vertex="1" value="&lt;font color=&quot;#26c6da&quot; style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;Warp #1&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:11px;&quot;&gt;32 线程 · SIMT&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="702" y="486" width="394" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T0&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="702" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T1&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="801" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T2&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="900" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T3&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="999" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T4&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="702" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T5&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="801" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T6&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="900" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T7&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="999" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T8&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="702" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T9&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="801" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T10&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="900" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T11&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="999" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T12&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="702" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T13&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="801" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T14&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="900" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T15&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="999" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;··· T31&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#888888&quot; style=&quot;font-size:11px;&quot;&gt;每线程 ≤ 255 Regs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="702" y="688" width="394" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" vertex="1" value="&lt;font color=&quot;#26c6da&quot; style=&quot;font-size:20px;&quot;&gt;&lt;b&gt;· · ·&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="1122" y="608" width="60" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#001a20;strokeColor=#26c6da;strokeWidth=2;arcSize=8;">
+          <mxGeometry x="1198" y="480" width="414" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="57" parent="1" vertex="1" value="&lt;font color=&quot;#26c6da&quot; style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;Warp #31&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:11px;&quot;&gt;32 线程 · SIMT&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="1208" y="486" width="394" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="58" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T0&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1208" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="59" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T1&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1307" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="60" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T2&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1406" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T3&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1505" y="516" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="62" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T4&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1208" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="63" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T5&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1307" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="64" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T6&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1406" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="65" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T7&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1505" y="559" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="66" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T8&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1208" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="67" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T9&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1307" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="68" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T10&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1406" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="69" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T11&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1505" y="602" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="70" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T12&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1208" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="71" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T13&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1307" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="72" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T14&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1406" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="73" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:11px;&quot;&gt;&lt;b&gt;T15&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#999&quot; style=&quot;font-size:10px;&quot;&gt;≤255 Reg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a0808;strokeColor=#ff5252;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="1505" y="645" width="94" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="74" parent="1" vertex="1" value="&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;··· T31&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#888888&quot; style=&quot;font-size:11px;&quot;&gt;≤255 Regs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="1208" y="688" width="394" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="75" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0a1e0a;strokeColor=#76ff03;strokeWidth=1;arcSize=6;">
+          <mxGeometry x="230" y="808" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="76" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;SM #1&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:10px;&quot;&gt;64C + 8T · 64KB&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="235" y="812" width="260" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="77" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0a1e0a;strokeColor=#76ff03;strokeWidth=1;arcSize=6;">
+          <mxGeometry x="512" y="808" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="78" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;SM #2&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:10px;&quot;&gt;64C + 8T · 64KB&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="517" y="812" width="260" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="79" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0a1e0a;strokeColor=#76ff03;strokeWidth=1;arcSize=6;">
+          <mxGeometry x="794" y="808" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="80" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;SM #3&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:10px;&quot;&gt;64C + 8T · 64KB&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="799" y="812" width="260" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="81" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:18px;&quot;&gt;&lt;b&gt;· · ·&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="1076" y="808" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="82" parent="1" vertex="1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0a1e0a;strokeColor=#76ff03;strokeWidth=1;arcSize=6;">
+          <mxGeometry x="1358" y="808" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="83" parent="1" vertex="1" value="&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;SM #39&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#aaaaaa&quot; style=&quot;font-size:10px;&quot;&gt;64C + 8T · 64KB&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;">
+          <mxGeometry x="1363" y="812" width="260" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="84" parent="1" vertex="1" value="&lt;font color=&quot;#00e5ff&quot; style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;层次总览:&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#00e5ff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;1 张 T4&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:12px;&quot;&gt; → &lt;/font&gt;&lt;font color=&quot;#ff9800&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;16GB GDDR6&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:12px;&quot;&gt; → &lt;/font&gt;&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;40 SM&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:12px;&quot;&gt; → 每SM &lt;/font&gt;&lt;font color=&quot;#76ff03&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;64 CUDA + 8 Tensor&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:12px;&quot;&gt; → ≤&lt;/font&gt;&lt;font color=&quot;#ce93d8&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;32 Block/SM&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:12px;&quot;&gt; → ≤&lt;/font&gt;&lt;font color=&quot;#ce93d8&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;1024 Thread/Block&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:12px;&quot;&gt;每 &lt;/font&gt;&lt;font color=&quot;#26c6da&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;32 Thread = 1 Warp&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#546e7a&quot; style=&quot;font-size:12px;&quot;&gt; → 每线程 &lt;/font&gt;&lt;font color=&quot;#ff5252&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;≤ 255 寄存器&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0d1117;strokeColor=#546e7a;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="204" y="889" width="1452" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="85" parent="1" vertex="1" value="&lt;font color=&quot;#00e5ff&quot; style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Q&amp;amp;A&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#00e5ff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Q: Shared Memory per SM = 64KB，但 Max Shared Memory per Block = 48KB，为什么 Block 用不满 64KB？&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;A:&lt;/b&gt;&lt;/font&gt; &lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;64KB 是每个 SM 上物理存在的 Shared Memory 总量 (硬件层面)；48KB 是单个 Block 最多能申请的上限 (软件层面)。&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;原因有二：&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;① 一个 SM 可同时驻留多个 Block（≤32），64KB 是所有 Block 的总池子。若一个 Block 占满，其他 Block 无法调度，并行度归零。&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size:12px;&quot;&gt;② Turing 架构中 Shared Memory 与 L1 Cache 共享同一块 SRAM，可灵活划分，例如 48KB Shared + 16KB L1。&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#888888&quot; style=&quot;font-size:11px;&quot;&gt;示例: SM 的 64KB SRAM → Block A 用 32KB + Block B 用 16KB = 48KB Shared，剩余 16KB 自动作为 L1 Cache&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0a1929;strokeColor=#00e5ff;strokeWidth=1;dashed=1;arcSize=8;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;spacingRight=8;">
+          <mxGeometry x="204" y="965" width="1452" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="86" parent="1" vertex="1" value="物理显卡" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00e5ff;strokeColor=#00e5ff;strokeWidth=0;fontColor=#ffffff;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;arcSize=40;">
+          <mxGeometry x="35" y="35" width="130" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="87" parent="1" vertex="1" value="全局显存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9800;strokeColor=#ff9800;strokeWidth=0;fontColor=#ffffff;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;arcSize=40;">
+          <mxGeometry x="35" y="105" width="130" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="88" parent="1" vertex="1" value="SM 阵列" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76ff03;strokeColor=#76ff03;strokeWidth=0;fontColor=#ffffff;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;arcSize=40;">
+          <mxGeometry x="35" y="247" width="130" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="89" parent="1" vertex="1" value="单个 SM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4caf50;strokeColor=#4caf50;strokeWidth=0;fontColor=#ffffff;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;arcSize=40;">
+          <mxGeometry x="35" y="287" width="130" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="90" parent="1" vertex="1" value="Thread Block" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ce93d8;strokeColor=#ce93d8;strokeWidth=0;fontColor=#ffffff;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;arcSize=40;">
+          <mxGeometry x="35" y="391" width="130" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="91" parent="1" vertex="1" value="Warp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#26c6da;strokeColor=#26c6da;strokeWidth=0;fontColor=#ffffff;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;arcSize=40;">
+          <mxGeometry x="35" y="485" width="130" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="92" parent="1" vertex="1" value="Thread" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff5252;strokeColor=#ff5252;strokeWidth=0;fontColor=#ffffff;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;arcSize=40;">
+          <mxGeometry x="35" y="522" width="130" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
