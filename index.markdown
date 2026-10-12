@@ -6,6 +6,7 @@ title: Blog
 <section class="showcase-hero">
   <h1>Welcome To Limaomao Blog</h1>
   <p>记录代码、学习和有趣发现</p>
+  <p><a href="{{ '/daily-status/' | relative_url }}">AI Compiler 日报运行状态</a></p>
   <p class="site-contact">联系方式：<a href="mailto:cun.jia.li@gmail.com">cun.jia.li@gmail.com</a></p>
   <div class="site-view-stats">
     <span id="busuanzi_container_site_pv">总访问 <strong id="busuanzi_value_site_pv">0</strong></span>

@@ -1,43 +1,38 @@
 ---
 layout: default
 categories: [ai-compiler, daily]
-title: "vLLM 引入树内硬件无关层，前沿 flat 模型与 torch.compile 路径正式分流"
+title: "vLLM 引入硬件无关层，为 OOT 加速器保留全图编译路径"
 date: 2026-09-23
 generation_mode: "deepseek"
 window_since: "2026-09-22T08:00:00+08:00"
 cutoff_at: "2026-09-23T08:00:00+08:00"
 ---
 
-# vLLM 引入树内硬件无关层，前沿 flat 模型与 torch.compile 路径正式分流
+# vLLM 引入硬件无关层，为 OOT 加速器保留全图编译路径
 
 ## 今日概览
 
-2026 年 9 月 23 日，vLLM 公布并合入树内硬件无关层（model_executor/hw_agnostic），目标是在前沿 flat 模型放弃 torch.compile、转向硬件特定融合与内核的背景下，继续为 OOT 加速器与较老 GPU 保留 fullgraph torch.compile 可编译路径。新层遵循 Compilable、Extensible、Isolated、Portable 四原则，transformers 后端重接线已指向该层并可用 USE_HW_AGNOSTIC=1 启用，在 H100 上三模型几何平均总 token 吞吐与原生实现差距控制在 3.4% 以内。
-
-> ⚠️ 本期数据不完整：
->
-> - 数据源 arxiv-ai-compiler 采集失败：HTTP 406 while requesting export.arxiv.org
+本期聚焦 vLLM 的一次重要架构调整：项目在转向硬件特定 flat 模型定义的同时，新增了一组硬件无关层，以维持 OOT 加速器经由 torch.compile 获得性能的路径，并在 NVIDIA H100 上验证了 3.4% 以内的吞吐差距。
 
 ## 重点变化
 
 ### 1. Hardware-Agnostic Models in vLLM
 
-vLLM 在其主干分支引入树内硬件无关层（model_executor/hw_agnostic），以保持 fullgraph torch.compile 的可编译性并服务 OOT 加速器与老 GPU。新层遵循可编译（全图 torch.compile）、可扩展（CustomOp/PluggableLayer）、隔离、可移植（原生 PyTorch 或 Triton/Helion）四项原则；transformers 后端的重接线已改指向该层，通过 USE_HW_AGNOSTIC=1 启用，并已在 IBM Spyre 等插件上验证 Gemma 4、Qwen3、Granite 4.2 等模型。与此同时，追求极致性能的前沿 flat 模型正放弃 torch.compile，改用模型与硬件特定的融合及内核，现有层未来可能被重构为与 torch.compile 不兼容。在 H100 上，三模型几何平均总 token 吞吐与原生实现差距在 3.4% 以内。
+vLLM 正在将其模型定义迁移到硬件特定的 flat 模型，这类模型使用自定义融合算子及其他硬件专属优化，并放弃 fullgraph torch.compile 兼容性。为应对由此带来的兼容性风险，项目在 model_executor/hw_agnostic 下新增了一组硬件无关层，遵循可编译、可扩展、隔离、可移植四项设计原则，使 IBM Spyre 等 OOT 加速器仍可通过 TorchDynamo tracing 与 TorchInductor lowering 获得性能。transformers 后端的 rewiring 已改为指向这些新层，可通过 USE_HW_AGNOSTIC=1 启用，并在 Gemma 4、Qwen3、Granite 4.2 等模型上借助 Spyre 插件完成验证。在 NVIDIA H100 上，硬件无关层的 token 吞吐量与原生实现差距在 3.4% 以内。后续计划为每个 flat 模型提供基于这些层的 model.py，模型专属层如 DeepSeekV4FlashMLAAttention 也将遵循同样原则。
 
-**为什么重要：** 这标志着 vLLM 内部出现两条分化路径：前沿模型走向定制内核，而可移植性继续依赖 torch.compile。对编译器生态而言，TorchDynamo/TorchInductor 在 OOT 加速器（如 IBM Spyre）路径上仍是关键组件；新层能否长期维持 fullgraph 可编译性并控制与原生实现的性能差距，将直接影响非英伟达硬件接近原生吞吐的难度，也决定了依赖 torch.compile 做图追踪与下放（lowering）的第三方插件能否跟上 vLLM 演进。
+**为什么重要：** 这标志着 vLLM 在硬件特化与可移植性之间的重新权衡。flat 模型以自定义融合算子换取性能，但同时放弃了 torch.compile 兼容性和基于 CustomOp 的扩展性，可能将依赖编译优化的非 NVIDIA 加速器排除在外。新的硬件无关层为这类加速器保留了一条全图编译路径，并维持 CustomOp 与 PluggableLayer 的覆盖机制，避免了 OOT 硬件在 vLLM 演进中被边缘化。
 
 **涉及层级：** `frontend`、`optimization`、`kernel_codegen`、`hardware_backend`、`runtime`、`benchmark`
 
 **来源：** [原始来源 1](https://pytorch.org/blog/hardware-agnostic-models-in-vllm/)
 
-**事件评分：** 80.2/100
+**事件评分：** 76.2/100
 
 ## 值得继续观察
 
-- vLLM model_executor/hw_agnostic 层的覆盖范围与相对原生实现的性能差距
-- flat 模型重构对既有层及 torch.compile 兼容性的后续影响
-- IBM Spyre 等 OOT 插件在新路径上的适配进展
-- USE_HW_AGNOSTIC=1 在更多模型与硬件上的验证结果
+- vLLM 为每个 flat 模型提供基于 HW agnostic 层的 model.py 的落地进展
+- model_executor/hw_agnostic 层覆盖范围的扩展及与原生实现的性能差距变化
+- IBM Spyre 等 OOT 插件在新路径上的持续性能验证
 
 ## 数据与生成说明
 

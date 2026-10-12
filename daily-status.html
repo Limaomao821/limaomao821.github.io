@@ -1,0 +1,68 @@
+---
+layout: default
+title: AI Compiler 日报运行状态
+permalink: /daily-status/
+---
+
+<p><a href="{{ '/' | relative_url }}">← 返回博客主页</a></p>
+<p>没有博客可能是当天无重大更新，也可能是采集、生成或发布失败。这里保留每个日期的处理结果。日报窗口为前一天 08:00 至当天 08:00（北京时间）。</p>
+<p id="daily-status-stale" hidden>今天尚无已同步的处理记录。流水线可能尚未运行、正在处理或已经失败，请查看 <a href="https://github.com/Limaomao821/ai-compiler-daily/actions">运行记录</a>。</p>
+<label for="daily-status-filter">筛选：</label>
+<select id="daily-status-filter">
+  <option value="all">全部日期</option>
+  <option value="attention">需要处理</option>
+  <option value="published">已有文章</option>
+  <option value="quiet">无重大更新</option>
+</select>
+<div style="overflow-x:auto; margin-top:1rem">
+  <table id="daily-status-table">
+    <thead><tr><th>日期</th><th>处理结果</th><th>文章</th><th>尝试次数</th><th>说明</th></tr></thead>
+    <tbody>
+      {% for day in site.data.daily_status.days %}
+        {% assign needs_attention = false %}
+        {% if day.generation_state != 'generated' and day.generation_state != 'no_updates' %}{% assign needs_attention = true %}{% endif %}
+        {% if day.generation_state == 'generated' and day.has_article != true %}{% assign needs_attention = true %}{% endif %}
+        <tr data-date="{{ day.date }}" data-attention="{{ needs_attention }}" data-published="{{ day.has_article }}" data-quiet="{% if day.generation_state == 'no_updates' %}true{% else %}false{% endif %}">
+          <td style="white-space:nowrap">{{ day.date }}</td>
+          <td style="white-space:nowrap">
+            {% case day.generation_state %}
+              {% when 'no_updates' %}无重大更新
+              {% when 'generated' %}{% if day.has_article %}已发布{% else %}{% if day.publication_state == 'failed' %}发布失败{% else %}待发布{% endif %}{% endif %}
+              {% when 'incomplete' %}数据不完整
+              {% when 'failed' %}生成失败
+              {% when 'running' %}处理中／运行中断
+              {% else %}无处理记录，待回补
+            {% endcase %}
+          </td>
+          <td>{% if day.has_article %}<a href="{{ day.article_url | relative_url }}">阅读日报</a>{% if day.article_is_current != true %}<small>（沿用已有文章）</small>{% endif %}{% else %}—{% endif %}</td>
+          <td>{{ day.attempts }}{% if day.attempts == 0 and day.generation_state != 'missing' %}（历史导入）{% endif %}</td>
+          <td>
+            {% if day.errors.size > 0 %}<details><summary>{{ day.errors.size }} 项异常</summary><ul>{% for error in day.errors %}<li>{{ error | escape }}</li>{% endfor %}</ul></details>{% endif %}
+            {% if day.generation_state == 'no_updates' %}采集和分析无已记录异常，没有事件达到报道阈值。{% endif %}
+            {% if day.selected_events > 0 %}入选 {{ day.selected_events }} 项事件。{% endif %}
+            {% if day.run_url %}<a href="{{ day.run_url | escape }}">本次运行</a>{% endif %}
+            {% if day.notes.size > 0 %}<details><summary>历史说明</summary>{% for note in day.notes %}<p>{{ note | escape }}</p>{% endfor %}</details>{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<p>“无重大更新”是正常完成，不会生成空文章。“数据不完整”会继续重试，已有文章可能只覆盖部分来源。历史结果依据保存的数据导入；“无记录”不代表无新闻。</p>
+<script>
+(function () {
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#daily-status-table tbody tr'));
+  document.getElementById('daily-status-filter').addEventListener('change', function (event) {
+    rows.forEach(function (row) {
+      row.hidden = event.target.value !== 'all' && row.getAttribute('data-' + event.target.value) !== 'true';
+    });
+  });
+  var parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+  var local = {};
+  parts.forEach(function (part) { local[part.type] = part.value; });
+  var today = local.year + '-' + local.month + '-' + local.day;
+  if (Number(local.hour) >= 8 && !rows.some(function (row) { return row.getAttribute('data-date') === today; })) {
+    document.getElementById('daily-status-stale').hidden = false;
+  }
+})();
+</script>
