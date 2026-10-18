@@ -1,18 +1,32 @@
 {
   "days": [
     {
-      "date": "2026-10-17",
-      "generation_state": "incomplete",
+      "date": "2026-10-18",
+      "generation_state": "no_updates",
       "publication_state": "not_required",
       "selected_events": 0,
       "attempts": 1,
-      "errors": [
-        "数据源 arxiv-ai-compiler 采集失败：HTTP 429 while requesting export.arxiv.org"
-      ],
-      "updated_at": "2026-10-17T04:42:50.037668+00:00",
+      "errors": [],
+      "updated_at": "2026-10-18T04:44:36.712909+00:00",
+      "window_since": "2026-10-17T08:00:00+08:00",
+      "cutoff_at": "2026-10-18T08:00:00+08:00",
+      "run_url": "https://github.com/Limaomao821/ai-compiler-daily/actions/runs/39098039142",
+      "notes": [],
+      "has_article": false,
+      "article_is_current": false,
+      "article_url": null
+    },
+    {
+      "date": "2026-10-17",
+      "generation_state": "no_updates",
+      "publication_state": "not_required",
+      "selected_events": 0,
+      "attempts": 2,
+      "errors": [],
+      "updated_at": "2026-10-18T04:44:37.471417+00:00",
       "window_since": "2026-10-16T08:00:00+08:00",
       "cutoff_at": "2026-10-17T08:00:00+08:00",
-      "run_url": "https://github.com/Limaomao821/ai-compiler-daily/actions/runs/39003252244",
+      "run_url": "https://github.com/Limaomao821/ai-compiler-daily/actions/runs/39098039142",
       "notes": [],
       "has_article": false,
       "article_is_current": false,
