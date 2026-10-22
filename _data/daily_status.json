@@ -1,6 +1,22 @@
 {
   "days": [
     {
+      "date": "2026-10-22",
+      "generation_state": "generated",
+      "publication_state": "published",
+      "selected_events": 3,
+      "attempts": 1,
+      "errors": [],
+      "updated_at": "2026-10-22T05:05:11.614952+00:00",
+      "window_since": "2026-10-21T08:00:00+08:00",
+      "cutoff_at": "2026-10-22T08:00:00+08:00",
+      "run_url": "https://github.com/Limaomao821/ai-compiler-daily/actions/runs/39725441172",
+      "notes": [],
+      "has_article": true,
+      "article_is_current": true,
+      "article_url": "/ai-compiler/daily/2026/10/22/ai-compiler-daily.html"
+    },
+    {
       "date": "2026-10-21",
       "generation_state": "generated",
       "publication_state": "published",
