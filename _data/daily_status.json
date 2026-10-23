@@ -1,6 +1,24 @@
 {
   "days": [
     {
+      "date": "2026-10-23",
+      "generation_state": "incomplete",
+      "publication_state": "published",
+      "selected_events": 1,
+      "attempts": 1,
+      "errors": [
+        "数据源 arxiv-ai-compiler 采集失败：HTTP 429 while requesting export.arxiv.org"
+      ],
+      "updated_at": "2026-10-23T05:06:43.423496+00:00",
+      "window_since": "2026-10-22T08:00:00+08:00",
+      "cutoff_at": "2026-10-23T08:00:00+08:00",
+      "run_url": "https://github.com/Limaomao821/ai-compiler-daily/actions/runs/39903387728",
+      "notes": [],
+      "has_article": true,
+      "article_is_current": true,
+      "article_url": "/ai-compiler/daily/2026/10/23/ai-compiler-daily.html"
+    },
+    {
       "date": "2026-10-22",
       "generation_state": "generated",
       "publication_state": "published",
